@@ -4,7 +4,21 @@ just wanna build my first fabric network and communicate with my network via fab
 
 ## build my first network
 
-网络计划使用 raft 共识, 2个org, 每个org下有2个peer.
+网络计划使用 raft 共识, 3个org, 每个org下有3个peer.
+
+网络名: yizhishi.com
+
+参与组织: warrior, hunter, rouger(非初始化节点)
+
+初始节点
+| 组织 | 节点 | 说明 |
+|--|--|--|
+| warrior | warrior_peer1 | warrior 的主节点 |
+| warrior | warrior_peer2 | warrior 的备份节点 |
+| warrior | warrior_peer3 | warrior 的背书节点 |
+| hunter | hunter_peer1 | hunter 的主节点 |
+| hunter | hunter_peer2 | hunter 的备份节点 |
+| hunter | hunter_peer3 | hunter 的背书节点 |
 
 1. 从 hyperledger-fabric 编译 cryptogen, configtxgen 等二进制文件
 
